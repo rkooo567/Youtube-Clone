@@ -1,3 +1,8 @@
+Youtube Clone Web Application.
+
+ReactJS, Youtbue API
+
+Used =>
 # ReduxSimpleStarter
 
 Interested in learning [Redux](https://www.udemy.com/react-redux/)?
