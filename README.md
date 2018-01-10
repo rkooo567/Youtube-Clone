@@ -2,6 +2,8 @@ Youtube Clone Web Application.
 
 ReactJS, Youtbue API
 
+I remoted the ReduxSimple Starter made by Stephen Grider to my repository (So 54 commits are not made by me).
+
 Used =>
 # ReduxSimpleStarter
 
