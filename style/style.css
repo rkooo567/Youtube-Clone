@@ -22,3 +22,8 @@
 .list-group-item:hover {
   background-color: #eee;
 }
+
+.spinning-wheel {
+  margin:0 auto;
+  width:250px;
+}

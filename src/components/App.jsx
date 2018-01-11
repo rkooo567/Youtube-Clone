@@ -27,7 +27,7 @@ class App extends Component {
     });
   }
 
-  searchResult(query) {
+  videoSearch(query) {
     YTSearch({
       key: YOUTUBE_API_KEY,
       term: query
@@ -44,7 +44,7 @@ class App extends Component {
       <div className='container'>
         <div>
           <SearchBar
-            onSearchResult={(query) => this.searchResult(query)}
+            onSearchResult={(query) => this.videoSearch(query)}
           />
         </div>
         <div>
