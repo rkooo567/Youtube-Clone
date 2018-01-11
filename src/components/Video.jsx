@@ -1,7 +1,7 @@
 import React from 'react';
 //====Componenet=================================
 import SpinningWheel from './SpinningWheel';
-import { Panel } from 'react-bootstrap';
+import { Panel }     from 'react-bootstrap';
 
 const Video = (props) => {
   if (!props.video) {
