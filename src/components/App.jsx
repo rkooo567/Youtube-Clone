@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import YTSearch from 'youtube-api-search';
+import YTSearch             from 'youtube-api-search';
 
 //======== Components===================
 import SearchBar from './Search';
 import VideoList from './VideoList';
 import Video     from './Video';
+import Header    from './Header';
 
 const YOUTUBE_API_KEY = 'AIzaSyBiHAaACxX7NmiCk0JnDw-YZlbtr9C4E40';
 
@@ -41,22 +42,25 @@ class App extends Component {
 
   render() {
     return (
-      <div className='container'>
+      <div className='app'>
+        <Header />
         <div>
-          <SearchBar
-            onSearchResult={(query) => this.videoSearch(query)}
-          />
-        </div>
-        <div>
-          <Video video={this.state.selectedVideo} />
-        </div>
-        <div>
-          <VideoList
-            videos={this.state.videos}
-            onVideoSelect={
-              selectedVideo => this.setState({selectedVideo: selectedVideo})
-            }
-          />
+          <div>
+            <SearchBar
+              onSearchResult={(query) => this.videoSearch(query)}
+            />
+          </div>
+          <div>
+            <Video video={this.state.selectedVideo} />
+          </div>
+          <div>
+            <VideoList
+              videos={this.state.videos}
+              onVideoSelect={
+                selectedVideo => this.setState({selectedVideo: selectedVideo})
+              }
+            />
+          </div>
         </div>
       </div>
     );

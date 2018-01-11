@@ -27,3 +27,14 @@
   margin:0 auto;
   width:250px;
 }
+
+.navbar-inverse {
+  border-color: #B22222;
+  background-color: #B22222;
+  margin-bottom: 0px;
+  width: 100%;
+}
+
+.navbar-inverse .navbar-brand {
+  color: white;
+}
