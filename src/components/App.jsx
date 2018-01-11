@@ -43,8 +43,8 @@ class App extends Component {
   render() {
     return (
       <div className='app'>
-        <Header />
         <div>
+          <Header />
           <div>
             <SearchBar
               onSearchResult={(query) => this.videoSearch(query)}
