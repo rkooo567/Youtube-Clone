@@ -6,7 +6,7 @@ import { Panel } from 'react-bootstrap';
 const Video = (props) => {
   if (!props.video) {
     return (
-      <div>
+      <div className='spinning-wheel'>
         <SpinningWheel type='spin' color='black'/>
         Loading..
       </div>
