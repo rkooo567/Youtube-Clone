@@ -1,6 +1,7 @@
 import React from 'react';
 //====Componenet=================================
 import SpinningWheel from './SpinningWheel';
+import { Panel } from 'react-bootstrap';
 
 const Video = (props) => {
   if (!props.video) {
@@ -22,10 +23,12 @@ const Video = (props) => {
             src={url}
           />
         </div>
-        <div className='details'>
-          <div className='title'>{video.snippet.title}</div>
-          <div className='description'>{video.snippet.description}</div>
-        </div>
+        <Panel className='details'>
+          <Panel.Heading>
+            {video.snippet.title}
+          </Panel.Heading>
+          <Panel.Body>{video.snippet.description}</Panel.Body>
+        </Panel>
       </div>
     );
   }

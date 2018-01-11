@@ -8,7 +8,7 @@ const VideoItem = (props) => {
 
   return (
     <li className='list-group-item' onClick={() => onVideoClick(video)}>
-      <div className='video-list media'>
+      <div className='video-item media'>
         <div className='media-left'>
           <img
             className='media-object'
